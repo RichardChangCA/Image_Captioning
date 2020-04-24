@@ -1,0 +1,14 @@
+model_name: GRU_with_Bahdanau_Attention
+encoder_name: ResNet50
+dataset_name: flickr8k
+
+1-gram blue score: 0.2646244217190163
+2-gram blue score: 0.07740649908031882
+3-gram blue score: 0.02509562999884085
+4-gram blue score: 0.00842503056574414
+comulative blue score with weights (4,3,2,1): 0.0809397699255732
+
+CIDEr score: 0.6116112723820825
+
+METEOR score: 0.3295119383297624
+

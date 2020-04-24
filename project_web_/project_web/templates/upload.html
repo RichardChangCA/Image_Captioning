@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Image Captioning</title>
+
+<style>
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ 
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=file] {
+    background-color: #588ab9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+div{
+    text-align: center;
+    padding: 50px;
+}
+
+</style>
+</head>
+<body>
+
+    <h1> CSI-5386-Natural-Language-Processing </h1>
+	<h2>Image Captioning</h2>
+    <h3>Lingfeng Zhang 300134245 Ottawa University </br>
+        Yu Sun 8472921 Carleton University</h3>
+
+    <div> 
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" name="image" id="image" accept="image/*"/>
+            <input type="submit" value="Submit">
+        </form>
+        <p>{{ rlt }}</p>
+        {% load static %}
+        <img src="{% static original_image %}" alt='original_image' width="30%" height="30%" style='border:5'>
+        <hr>
+        <h6>Image Attention Plot</h6>
+        <img src="{% static attention_image %}" alt='attention_image' width="70%" style='border:5'>
+    </div>
+    
+</body>
+</html>
+

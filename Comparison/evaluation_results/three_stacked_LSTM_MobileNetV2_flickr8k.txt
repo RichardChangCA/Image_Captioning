@@ -1,0 +1,14 @@
+model_name: three_stacked_LSTM
+encoder_name: MobileNetV2
+dataset_name: flickr8k
+
+1-gram blue score: 0.23214440433212993
+2-gram blue score: 0.06511762251676882
+3-gram blue score: 0.019266022069659612
+4-gram blue score: 0.00563791599910767
+comulative blue score with weights (4,3,2,1): 0.06644818447090232
+
+CIDEr score: 0.4986731172527161
+
+METEOR score: 0.307197727986631
+

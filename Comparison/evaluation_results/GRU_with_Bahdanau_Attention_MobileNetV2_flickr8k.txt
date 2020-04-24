@@ -1,0 +1,14 @@
+model_name: GRU_with_Bahdanau_Attention
+encoder_name: MobileNetV2
+dataset_name: flickr8k
+
+1-gram blue score: 0.25998934469898777
+2-gram blue score: 0.07363238325638449
+3-gram blue score: 0.02410407082382959
+4-gram blue score: 0.007784351229927493
+comulative blue score with weights (4,3,2,1): 0.07791896914325556
+
+CIDEr score: 0.5799789749112346
+
+METEOR score: 0.3232948768654078
+

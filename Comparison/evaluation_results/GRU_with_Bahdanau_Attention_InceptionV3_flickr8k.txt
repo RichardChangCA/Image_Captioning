@@ -1,0 +1,14 @@
+model_name: GRU_with_Bahdanau_Attention
+encoder_name: InceptionV3
+dataset_name: flickr8k
+
+1-gram blue score: 0.26150820664095
+2-gram blue score: 0.0754250909398528
+3-gram blue score: 0.024036985880908534
+4-gram blue score: 0.007588960709479584
+comulative blue score with weights (4,3,2,1): 0.07842293896607425
+
+CIDEr score: 0.5902435515008061
+
+METEOR score: 0.3288984060902652
+
