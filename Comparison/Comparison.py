@@ -33,9 +33,9 @@ from nltk.translate.bleu_score import corpus_bleu
 from nltk.translate.meteor_score import single_meteor_score
 from cider import Cider
 
-physical_devices = tf.config.experimental.list_physical_devices('GPU')
-print("physical_devices-------------", len(physical_devices))
-tf.config.experimental.set_memory_growth(physical_devices[0], True)
+# physical_devices = tf.config.experimental.list_physical_devices('GPU')
+# print("physical_devices-------------", len(physical_devices))
+# tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 class get_datasets_class:
     def __init__(self,method,dataset_name,feature_extracted):

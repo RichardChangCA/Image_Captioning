@@ -8,9 +8,11 @@ sys.path.insert(0,'../Comparison')
 print("system path: ",sys.path)
 from Comparison import prediction
 
+os.chdir("../project_web_")
 IMAGE_DIR='./static/images'
 RESULT_BASE_DIR = '../Comparison/final_results'
 attention_img_name = 'attention_plot.png'
+print(attention_img_name)
 def upload(request):
     print("current path: ",os.getcwd())
     context = {}
